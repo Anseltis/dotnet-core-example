@@ -26,7 +26,7 @@ namespace ConsoleApp1
                         options.ThreadCount = int.Parse(config["threadCount"]);
                     }
                 })
-                .UseUrls("http://localhost:5000");
+                .UseUrls("http://*:5000");
 
             var host = builder.Build();
             host.Run();
